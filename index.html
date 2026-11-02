@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fall-O-Ween Gallery | Arun Thomas Photography</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        halloween: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            900: '#7c2d12',
+                            950: '#431407',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Cinzel', serif;
+        }
+    </style>
+</head>
+<body class="bg-stone-950 text-stone-100 antialiased selection:bg-halloween-500 selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-stone-950/90 backdrop-blur-md border-b border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-halloween-500/20 border border-halloween-500/50 flex items-center justify-center text-halloween-500 font-bold text-lg">
+                    <i class="fa-solid fa-camera-retro"></i>
+                </div>
+                <div>
+                    <span class="heading-font text-lg font-bold tracking-wider text-stone-100 block">Arun Thomas</span>
+                    <span class="text-xs text-halloween-500 tracking-widest uppercase font-semibold">Photography</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-stone-300">
+                <a href="#event-details" class="hover:text-halloween-500 transition-colors">Event Info</a>
+                <a href="#gallery" class="hover:text-halloween-500 transition-colors">Photo Gallery</a>
+                <a href="#contact" class="hover:text-halloween-500 transition-colors">Book Session</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div class="hidden md:block">
+                <a href="https://drive.google.com/drive/folders/1CUaQqUYFqavbA3EfjqTRYzWhu_u6ZN29?usp=sharing" target="_blank" class="bg-halloween-600 hover:bg-halloween-500 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-halloween-600/20 flex items-center space-x-2">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span>Google Drive ZIP</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-stone-300 hover:text-white focus:outline-none text-xl p-2">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-stone-900 border-b border-stone-800 px-6 py-4 space-y-4">
+            <a href="#event-details" class="block text-stone-300 hover:text-halloween-500">Event Info</a>
+            <a href="#gallery" class="block text-stone-300 hover:text-halloween-500">Photo Gallery</a>
+            <a href="#contact" class="block text-stone-300 hover:text-halloween-500">Book Session</a>
+            <div class="pt-2">
+                <a href="https://drive.google.com/drive/folders/1CUaQqUYFqavbA3EfjqTRYzWhu_u6ZN29?usp=sharing" target="_blank" class="w-full bg-halloween-600 text-white text-center py-2.5 rounded-full font-semibold block">
+                    <i class="fa-solid fa-cloud-arrow-down mr-2"></i> Google Drive ZIP
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. Event Info Section -->
+    <section id="event-details" class="relative py-20 lg:py-24 overflow-hidden border-b border-stone-900">
+        <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#f97316_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-halloween-500/10 border border-halloween-500/30 px-4 py-1.5 rounded-full text-halloween-400 text-xs font-semibold tracking-wide uppercase">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>October 31, 2026 • Fall-O-Ween Event</span>
+                </div>
+                <h1 class="heading-font text-4xl sm:text-6xl font-bold tracking-tight text-white leading-tight">
+                    St. Thomas Aquinas <span class="text-halloween-500">Fall-O-Ween</span> Gallery
+                </h1>
+                <p class="text-stone-400 text-lg">
+                    Professional event capture at St. Thomas Aquinas Catholic Church, New Port Richey. View photos below or download full-resolution uncompressed images directly via Google Drive.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                    <a href="https://drive.google.com/drive/folders/1CUaQqUYFqavbA3EfjqTRYzWhu_u6ZN29?usp=sharing" target="_blank" class="w-full sm:w-auto bg-halloween-600 hover:bg-halloween-500 text-white px-8 py-3.5 rounded-full font-semibold transition-all shadow-xl shadow-halloween-600/30 flex items-center justify-center space-x-3">
+                        <i class="fa-solid fa-download text-lg"></i>
+                        <span>Download All Photos (Google Drive)</span>
+                    </a>
+                    <a href="#gallery" class="w-full sm:w-auto bg-stone-900 hover:bg-stone-800 border border-stone-800 text-stone-200 px-8 py-3.5 rounded-full font-semibold transition-all flex items-center justify-center space-x-2">
+                        <span>Browse Web Gallery</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Photo Gallery Section -->
+    <section id="gallery" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+                <span class="text-halloween-500 font-semibold text-xs tracking-widest uppercase">Full Collection</span>
+                <h2 class="heading-font text-3xl sm:text-4xl font-bold text-white mt-1">Photo Gallery</h2>
+            </div>
+            <div class="mt-4 md:mt-0">
+                <a href="https://drive.google.com/drive/folders/1CUaQqUYFqavbA3EfjqTRYzWhu_u6ZN29?usp=sharing" target="_blank" class="inline-flex items-center space-x-2 text-sm font-semibold text-halloween-400 hover:text-halloween-300">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span>Get All Images in High Quality (Google Drive)</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Image Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Gallery Item 1 -->
+            <div class="group relative rounded-xl overflow-hidden bg-stone-900 border border-stone-800 aspect-[4/3] cursor-pointer" onclick="openLightbox('images/photo1.jpg', 'Fall-O-Ween Photo 1')">
+                <img src="images/photo1.jpg" alt="Fall-O-Ween Photo 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="flex justify-between items-center w-full">
+                        <span class="text-sm font-medium text-white">Fall-O-Ween Photo 1</span>
+                        <span class="bg-halloween-600 text-white p-2 rounded-full text-xs"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="group relative rounded-xl overflow-hidden bg-stone-900 border border-stone-800 aspect-[4/3] cursor-pointer" onclick="openLightbox('images/photo2.jpg', 'Fall-O-Ween Photo 2')">
+                <img src="images/photo2.jpg" alt="Fall-O-Ween Photo 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="flex justify-between items-center w-full">
+                        <span class="text-sm font-medium text-white">Fall-O-Ween Photo 2</span>
+                        <span class="bg-halloween-600 text-white p-2 rounded-full text-xs"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="group relative rounded-xl overflow-hidden bg-stone-900 border border-stone-800 aspect-[4/3] cursor-pointer" onclick="openLightbox('images/photo3.jpg', 'Fall-O-Ween Photo 3')">
+                <img src="images/photo3.jpg" alt="Fall-O-Ween Photo 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="flex justify-between items-center w-full">
+                        <span class="text-sm font-medium text-white">Fall-O-Ween Photo 3</span>
+                        <span class="bg-halloween-600 text-white p-2 rounded-full text-xs"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="group relative rounded-xl overflow-hidden bg-stone-900 border border-stone-800 aspect-[4/3] cursor-pointer" onclick="openLightbox('images/photo4.jpg', 'Fall-O-Ween Photo 4')">
+                <img src="images/photo4.jpg" alt="Fall-O-Ween Photo 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="flex justify-between items-center w-full">
+                        <span class="text-sm font-medium text-white">Fall-O-Ween Photo 4</span>
+                        <span class="bg-halloween-600 text-white p-2 rounded-full text-xs"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 5 -->
+            <div class="group relative rounded-xl overflow-hidden bg-stone-900 border border-stone-800 aspect-[4/3] cursor-pointer" onclick="openLightbox('images/photo5.jpg', 'Fall-O-Ween Photo 5')">
+                <img src="images/photo5.jpg" alt="Fall-O-Ween Photo 5" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="flex justify-between items-center w-full">
+                        <span class="text-sm font-medium text-white">Fall-O-Ween Photo 5</span>
+                        <span class="bg-halloween-600 text-white p-2 rounded-full text-xs"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 6 -->
+            <div class="group relative rounded-xl overflow-hidden bg-stone-900 border border-stone-800 aspect-[4/3] cursor-pointer" onclick="openLightbox('images/photo6.jpg', 'Fall-O-Ween Photo 6')">
+                <img src="images/photo6.jpg" alt="Fall-O-Ween Photo 6" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="flex justify-between items-center w-full">
+                        <span class="text-sm font-medium text-white">Fall-O-Ween Photo 6</span>
+                        <span class="bg-halloween-600 text-white p-2 rounded-full text-xs"><i class="fa-solid fa-expand"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Download CTA -->
+        <div class="mt-16 bg-gradient-to-r from-stone-900 to-stone-900/80 border border-stone-800 rounded-2xl p-8 sm:p-12 text-center max-w-4xl mx-auto">
+            <h3 class="heading-font text-2xl sm:text-3xl font-bold text-white">Want the Complete Zip Archive?</h3>
+            <p class="text-stone-400 mt-2 max-w-xl mx-auto text-sm sm:text-base">
+                Download all high-resolution images instantly without any compression or loss in quality directly from Google Drive.
+            </p>
+            <div class="mt-6">
+                <a href="https://drive.google.com/drive/folders/1CUaQqUYFqavbA3EfjqTRYzWhu_u6ZN29?usp=sharing" target="_blank" class="bg-halloween-600 hover:bg-halloween-500 text-white px-8 py-3.5 rounded-full font-semibold transition-all shadow-lg shadow-halloween-600/30 inline-flex items-center space-x-2">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span>Open Google Drive Folder</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Book Session Section -->
+    <section id="contact" class="py-20 bg-stone-900/40 border-t border-stone-900">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-halloween-500 font-semibold text-xs tracking-widest uppercase">Get in Touch</span>
+                <h2 class="heading-font text-3xl font-bold text-white mt-1">Book a Photography Session</h2>
+                <p class="text-stone-400 text-sm mt-2">Interested in booking Arun Thomas Photography for your upcoming event or portrait session? Send a message below.</p>
+            </div>
+
+            <!-- Form configured to email Arun34x@gmail.com via FormSubmit -->
+            <form action="https://formsubmit.co/Arun34x@gmail.com" method="POST" class="bg-stone-900 border border-stone-800 rounded-2xl p-6 sm:p-10 shadow-xl space-y-6">
+                <!-- FormSubmit Configuration Hidden Inputs -->
+                <input type="hidden" name="_subject" value="New Session Booking Inquiry - Arun Thomas Photography">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Your Name</label>
+                        <input type="text" name="name" required class="w-full bg-stone-950 border border-stone-800 rounded-xl px-4 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-halloween-500 transition-colors" placeholder="John Doe">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Email Address</label>
+                        <input type="email" name="email" required class="w-full bg-stone-950 border border-stone-800 rounded-xl px-4 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-halloween-500 transition-colors" placeholder="john@example.com">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Phone Number</label>
+                        <input type="tel" name="phone" class="w-full bg-stone-950 border border-stone-800 rounded-xl px-4 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-halloween-500 transition-colors" placeholder="(555) 000-0000">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Session Type</label>
+                        <select name="session_type" class="w-full bg-stone-950 border border-stone-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-halloween-500 transition-colors">
+                            <option>Event Coverage</option>
+                            <option>Family Portrait</option>
+                            <option>Commercial / Corporate</option>
+                            <option>Other Session</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Message / Details</label>
+                    <textarea name="message" rows="4" required class="w-full bg-stone-950 border border-stone-800 rounded-xl px-4 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-halloween-500 transition-colors" placeholder="Tell me about your photography requirements..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-halloween-600 hover:bg-halloween-500 text-white py-4 rounded-xl font-semibold transition-all shadow-lg shadow-halloween-600/20">
+                    Send Inquiry
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 border-t border-stone-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <span class="heading-font font-bold text-lg text-white">Arun Thomas Photography</span>
+                <p class="text-stone-500 text-xs mt-1">St. Thomas Aquinas Church • New Port Richey, FL</p>
+            </div>
+            <div class="text-stone-500 text-xs">
+                &copy; 2026 Arun Thomas Photography. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-50 bg-black/95 hidden flex items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-2xl hover:text-halloween-500 focus:outline-none p-2">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-4xl max-h-[90vh] flex flex-col items-center">
+            <img id="lightbox-img" src="" alt="Expanded Preview" class="max-w-full max-h-[80vh] object-contain rounded-lg border border-stone-800 shadow-2xl">
+            <div class="flex items-center justify-between w-full mt-4 px-2">
+                <span id="lightbox-caption" class="text-stone-300 text-sm font-medium"></span>
+                <a id="lightbox-download" href="https://drive.google.com/drive/folders/1CUaQqUYFqavbA3EfjqTRYzWhu_u6ZN29?usp=sharing" target="_blank" class="bg-halloween-600 hover:bg-halloween-500 text-white text-xs px-4 py-2 rounded-lg font-semibold flex items-center space-x-2">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span>Download from Drive</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Scripts -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Lightbox functionality
+        function openLightbox(src, caption) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            const cap = document.getElementById('lightbox-caption');
+            
+            img.src = src;
+            cap.textContent = caption;
+            lightbox.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html>
